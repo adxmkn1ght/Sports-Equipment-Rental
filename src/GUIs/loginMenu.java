@@ -27,15 +27,16 @@ public class loginMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        loginMenuPanel = new javax.swing.JPanel();
         sportsEquipmentRentalLabel = new javax.swing.JLabel();
         signUpButton = new javax.swing.JButton();
         loginButton = new javax.swing.JButton();
+        closeProgramButtonLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loginMenuPanel.setBackground(new java.awt.Color(204, 204, 255));
+        loginMenuPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         sportsEquipmentRentalLabel.setFont(new java.awt.Font("Cambria", 0, 24)); // NOI18N
         sportsEquipmentRentalLabel.setText("Sports Equipment Rental");
@@ -56,32 +57,42 @@ public class loginMenu extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(signUpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(67, 67, 67)
-                        .addComponent(sportsEquipmentRentalLabel)))
+        closeProgramButtonLogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        closeProgramButtonLogin.setText("Close Program");
+        closeProgramButtonLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                closeProgramButtonLoginActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout loginMenuPanelLayout = new javax.swing.GroupLayout(loginMenuPanel);
+        loginMenuPanel.setLayout(loginMenuPanelLayout);
+        loginMenuPanelLayout.setHorizontalGroup(
+            loginMenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loginMenuPanelLayout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(sportsEquipmentRentalLabel)
                 .addContainerGap(73, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginMenuPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(loginMenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(closeProgramButtonLogin))
+                .addGap(134, 134, 134))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        loginMenuPanelLayout.setVerticalGroup(
+            loginMenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(loginMenuPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(sportsEquipmentRentalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(52, 52, 52)
+                .addGap(42, 42, 42)
                 .addComponent(signUpButton)
-                .addGap(30, 30, 30)
+                .addGap(39, 39, 39)
                 .addComponent(loginButton)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addComponent(closeProgramButtonLogin)
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -90,19 +101,13 @@ public class loginMenu extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(loginMenuPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(loginMenuPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -115,8 +120,14 @@ public class loginMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_signUpButtonActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        // TODO add your handling code here:
+        login log = new login();
+        log.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_loginButtonActionPerformed
+
+    private void closeProgramButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeProgramButtonLoginActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_closeProgramButtonLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,8 +166,9 @@ public class loginMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton closeProgramButtonLogin;
     private javax.swing.JButton loginButton;
+    private javax.swing.JPanel loginMenuPanel;
     private javax.swing.JButton signUpButton;
     private javax.swing.JLabel sportsEquipmentRentalLabel;
     // End of variables declaration//GEN-END:variables

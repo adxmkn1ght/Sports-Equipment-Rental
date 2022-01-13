@@ -1,6 +1,7 @@
 
-package Objects;
+package mainMethod;
 
+import Objects.*;
 import GUIs.*;
 
 public class SportsEquipmentRental {
